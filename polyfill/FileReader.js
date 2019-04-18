@@ -2,7 +2,8 @@
 // Use of this source code is governed by a MIT-style license that can be
 // found in the LICENSE file.
 
-import RNFetchBlob from '../index.js'
+import {NativeModules} from 'react-native';
+// import RNFetchBlob from '../index.js'
 import ProgressEvent from './ProgressEvent.js'
 import EventTarget from './EventTarget'
 import Blob from './Blob'
@@ -10,6 +11,7 @@ import Log from '../utils/log.js'
 import fs from '../fs'
 
 const log = new Log('FileReader')
+const RNFetchBlob = NativeModules.RNFetchBlob;
 
 log.level(3)
 
